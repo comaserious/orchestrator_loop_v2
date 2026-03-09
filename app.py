@@ -5,6 +5,10 @@ from contextlib import asynccontextmanager
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     from dotenv import load_dotenv
+
+    # router 로드
+    from chat_bot.router import router as chat_bot_router
+    
     from app_registry import app_register
 
     load_dotenv()
