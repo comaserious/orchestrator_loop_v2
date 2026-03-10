@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+playwright
+aiohttp
+bs4
+lxml
+html5lib
+openai
+tavily-python
+glom

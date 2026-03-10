@@ -1,0 +1,538 @@
+data: {"response":{"id":"resp_0d876bdabdaef41f0069af723f0d748193a3671cdcf2567c18","created_at":1773105727.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":null,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"auto","status":"in_progress","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":null,"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":0,"type":"response.created"}
+
+data: {"response":{"id":"resp_0d876bdabdaef41f0069af723f0d748193a3671cdcf2567c18","created_at":1773105727.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":null,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"auto","status":"in_progress","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":null,"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":1,"type":"response.in_progress"}
+
+data: {"item":{"id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","content":[],"role":"assistant","status":"in_progress","type":"message","phase":null},"output_index":0,"sequence_number":2,"type":"response.output_item.added"}
+
+data: {"content_index":0,"item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","output_index":0,"part":{"annotations":[],"text":"","type":"output_text","logprobs":[]},"sequence_number":3,"type":"response.content_part.added"}
+
+data: {"content_index":0,"delta":"물","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":4,"type":"response.output_text.delta","obfuscation":"mdqn5y4qSnFcoj7"}
+
+data: {"content_index":0,"delta":"론","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":5,"type":"response.output_text.delta","obfuscation":"rjHe9PmPgfPDhOh"}
+
+data: {"content_index":0,"delta":"입니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":6,"type":"response.output_text.delta","obfuscation":"TvXVw5txXVdgK"}
+
+data: {"content_index":0,"delta":"!","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":7,"type":"response.output_text.delta","obfuscation":"ODauHHHouJvmE2l"}
+
+data: {"content_index":0,"delta":" 요청","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":8,"type":"response.output_text.delta","obfuscation":"y0DX2JgqYuIlD"}
+
+data: {"content_index":0,"delta":"하","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":9,"type":"response.output_text.delta","obfuscation":"syAOxwr45kTl5OD"}
+
+data: {"content_index":0,"delta":"신","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":10,"type":"response.output_text.delta","obfuscation":"pnKrU5jl5CpRx9I"}
+
+data: {"content_index":0,"delta":" http","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":11,"type":"response.output_text.delta","obfuscation":"wCgXajZjoG0"}
+
+data: {"content_index":0,"delta":"://","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":12,"type":"response.output_text.delta","obfuscation":"ksfRNZkq8Kaeo"}
+
+data: {"content_index":0,"delta":"chat","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":13,"type":"response.output_text.delta","obfuscation":"BAAHsnrQprRo"}
+
+data: {"content_index":0,"delta":"ty","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":14,"type":"response.output_text.delta","obfuscation":"pncBxMHGxiTjZF"}
+
+data: {"content_index":0,"delta":".kr","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":15,"type":"response.output_text.delta","obfuscation":"0hofaTOIU1RHM"}
+
+data: {"content_index":0,"delta":" 웹","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":16,"type":"response.output_text.delta","obfuscation":"qfzvLlTOj9KvGC"}
+
+data: {"content_index":0,"delta":"사이트","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":17,"type":"response.output_text.delta","obfuscation":"aGLl8GxM5hzhZ"}
+
+data: {"content_index":0,"delta":"의","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":18,"type":"response.output_text.delta","obfuscation":"2wdezDhQUsST6Ye"}
+
+data: {"content_index":0,"delta":" 주요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":19,"type":"response.output_text.delta","obfuscation":"ItEOAgx5rkWVe"}
+
+data: {"content_index":0,"delta":" 내용을","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":20,"type":"response.output_text.delta","obfuscation":"CIh27pPp0pQw"}
+
+data: {"content_index":0,"delta":" 요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":21,"type":"response.output_text.delta","obfuscation":"txIizav4BvnFnf"}
+
+data: {"content_index":0,"delta":"약","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":22,"type":"response.output_text.delta","obfuscation":"5OGEfMDxKY77U1s"}
+
+data: {"content_index":0,"delta":"해","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":23,"type":"response.output_text.delta","obfuscation":"wd3P97KSFtKybPA"}
+
+data: {"content_index":0,"delta":" 드","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":24,"type":"response.output_text.delta","obfuscation":"BZYHe1KiNvaUNI"}
+
+data: {"content_index":0,"delta":"리","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":25,"type":"response.output_text.delta","obfuscation":"5m6jAdH6948X3QM"}
+
+data: {"content_index":0,"delta":"겠습니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":26,"type":"response.output_text.delta","obfuscation":"nExuHCBTJe1p"}
+
+data: {"content_index":0,"delta":".\n\n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":27,"type":"response.output_text.delta","obfuscation":"UO5gZEobaS1OP"}
+
+data: {"content_index":0,"delta":"(","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":28,"type":"response.output_text.delta","obfuscation":"KKXLQ6RLF7hNmF3"}
+
+data: {"content_index":0,"delta":"202","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":29,"type":"response.output_text.delta","obfuscation":"Lpe8bOlo0CHm5"}
+
+data: {"content_index":0,"delta":"4","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":30,"type":"response.output_text.delta","obfuscation":"szCgDmPWloER0bi"}
+
+data: {"content_index":0,"delta":"년","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":31,"type":"response.output_text.delta","obfuscation":"pgnydyVsbyNkWDi"}
+
+data: {"content_index":0,"delta":" ","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":32,"type":"response.output_text.delta","obfuscation":"zUUGi78HRem7g3r"}
+
+data: {"content_index":0,"delta":"6","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":33,"type":"response.output_text.delta","obfuscation":"9fSVcpcSQ4Qejj4"}
+
+data: {"content_index":0,"delta":"월","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":34,"type":"response.output_text.delta","obfuscation":"YfFaxZZiGHV4CJk"}
+
+data: {"content_index":0,"delta":" 기준","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":35,"type":"response.output_text.delta","obfuscation":"uKYI97lah8Xiy"}
+
+data: {"content_index":0,"delta":")","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":36,"type":"response.output_text.delta","obfuscation":"PwVUIDqIZl5vVyL"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":37,"type":"response.output_text.delta","obfuscation":"2OdCKk0Sy6tJN"}
+
+data: {"content_index":0,"delta":"Chat","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":38,"type":"response.output_text.delta","obfuscation":"6FWqw8wDkKZB"}
+
+data: {"content_index":0,"delta":"ty","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":39,"type":"response.output_text.delta","obfuscation":"UeMP3nvFyMG1zC"}
+
+data: {"content_index":0,"delta":".kr","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":40,"type":"response.output_text.delta","obfuscation":"GDHoTVLIbdtxA"}
+
+data: {"content_index":0,"delta":"은","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":41,"type":"response.output_text.delta","obfuscation":"4p8Vg4KrSGebcat"}
+
+data: {"content_index":0,"delta":" 한국","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":42,"type":"response.output_text.delta","obfuscation":"so5OH8j4EbJcy"}
+
+data: {"content_index":0,"delta":"어","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":43,"type":"response.output_text.delta","obfuscation":"Ra3c8OH3lMVvuvT"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":44,"type":"response.output_text.delta","obfuscation":"jSsQXGrL6igoVG"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":45,"type":"response.output_text.delta","obfuscation":"LjVEhSwqSIP0sxd"}
+
+data: {"content_index":0,"delta":"방","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":46,"type":"response.output_text.delta","obfuscation":"CmSqHMC9gnrsnXR"}
+
+data: {"content_index":0,"delta":" 웹","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":47,"type":"response.output_text.delta","obfuscation":"idRPrIz6g0X3o2"}
+
+data: {"content_index":0,"delta":"사이트","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":48,"type":"response.output_text.delta","obfuscation":"CcxN9CaZTBbHv"}
+
+data: {"content_index":0,"delta":"로","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":49,"type":"response.output_text.delta","obfuscation":"CnwPurrFa0zDMnH"}
+
+data: {"content_index":0,"delta":",","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":50,"type":"response.output_text.delta","obfuscation":"3cpMcDJMBOraKb7"}
+
+data: {"content_index":0,"delta":" 사용","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":51,"type":"response.output_text.delta","obfuscation":"PSQCZpK7MYg22"}
+
+data: {"content_index":0,"delta":"자가","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":52,"type":"response.output_text.delta","obfuscation":"LkwhQYmMRYpsSU"}
+
+data: {"content_index":0,"delta":" 실","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":53,"type":"response.output_text.delta","obfuscation":"7alLd8bhuh2RLZ"}
+
+data: {"content_index":0,"delta":"시간","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":54,"type":"response.output_text.delta","obfuscation":"ip2wTRskxbwQGS"}
+
+data: {"content_index":0,"delta":"으로","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":55,"type":"response.output_text.delta","obfuscation":"GkaoMiv7FnRLmS"}
+
+data: {"content_index":0,"delta":" 대","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":56,"type":"response.output_text.delta","obfuscation":"BeEwyje6wYrPZn"}
+
+data: {"content_index":0,"delta":"화","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":57,"type":"response.output_text.delta","obfuscation":"cU8tBuPRLm1zisW"}
+
+data: {"content_index":0,"delta":"할","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":58,"type":"response.output_text.delta","obfuscation":"zQ61qaln6yd3C1q"}
+
+data: {"content_index":0,"delta":" 수","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":59,"type":"response.output_text.delta","obfuscation":"vMHbzD7wuLPdAN"}
+
+data: {"content_index":0,"delta":" 있는","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":60,"type":"response.output_text.delta","obfuscation":"ywEg0r5d5CBg0"}
+
+data: {"content_index":0,"delta":" 공간","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":61,"type":"response.output_text.delta","obfuscation":"rw7QTElfFg15Z"}
+
+data: {"content_index":0,"delta":"을","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":62,"type":"response.output_text.delta","obfuscation":"E1nrtiiMNcVn1KC"}
+
+data: {"content_index":0,"delta":" 제공합니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":63,"type":"response.output_text.delta","obfuscation":"mSd1pvZPUE"}
+
+data: {"content_index":0,"delta":".","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":64,"type":"response.output_text.delta","obfuscation":"vDW4RJZIWWbM8uJ"}
+
+data: {"content_index":0,"delta":" 회원","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":65,"type":"response.output_text.delta","obfuscation":"lLAkANqnGJqB0"}
+
+data: {"content_index":0,"delta":" 가입","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":66,"type":"response.output_text.delta","obfuscation":"A3sGOH7ADFwv3"}
+
+data: {"content_index":0,"delta":" 없이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":67,"type":"response.output_text.delta","obfuscation":"TKk6yztfgKJ4e"}
+
+data: {"content_index":0,"delta":" 익","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":68,"type":"response.output_text.delta","obfuscation":"d8SAgzV85MdDo2"}
+
+data: {"content_index":0,"delta":"명","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":69,"type":"response.output_text.delta","obfuscation":"qadvvQs7Xsne2Pn"}
+
+data: {"content_index":0,"delta":"으로","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":70,"type":"response.output_text.delta","obfuscation":"V9V28vGRSRvBed"}
+
+data: {"content_index":0,"delta":" 자유","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":71,"type":"response.output_text.delta","obfuscation":"Q8oHfIlNKg9To"}
+
+data: {"content_index":0,"delta":"롭게","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":72,"type":"response.output_text.delta","obfuscation":"jgIcpqEoFqjHXn"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":73,"type":"response.output_text.delta","obfuscation":"VzVVVdU2DqZkQd"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":74,"type":"response.output_text.delta","obfuscation":"iff5AvADqBEmgRz"}
+
+data: {"content_index":0,"delta":"이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":75,"type":"response.output_text.delta","obfuscation":"u27zGwGARIHpJ7v"}
+
+data: {"content_index":0,"delta":" 가능","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":76,"type":"response.output_text.delta","obfuscation":"EhllQKfFnX9um"}
+
+data: {"content_index":0,"delta":"하며","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":77,"type":"response.output_text.delta","obfuscation":"2FJErXgaq2GEPd"}
+
+data: {"content_index":0,"delta":",","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":78,"type":"response.output_text.delta","obfuscation":"idGFKsBWIrlByx0"}
+
+data: {"content_index":0,"delta":" 다양한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":79,"type":"response.output_text.delta","obfuscation":"O4BTdKB7dIVN"}
+
+data: {"content_index":0,"delta":" 주","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":80,"type":"response.output_text.delta","obfuscation":"w5y8twEbUQpd82"}
+
+data: {"content_index":0,"delta":"제","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":81,"type":"response.output_text.delta","obfuscation":"V4dLGySnBC3iu42"}
+
+data: {"content_index":0,"delta":"의","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":82,"type":"response.output_text.delta","obfuscation":"lEaSiC5tAE0zjFa"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":83,"type":"response.output_text.delta","obfuscation":"UFoT1hmsGvbKTT"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":84,"type":"response.output_text.delta","obfuscation":"3FnGK3XCoSD1ufr"}
+
+data: {"content_index":0,"delta":"방","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":85,"type":"response.output_text.delta","obfuscation":"S4IQpswh5gR1eIE"}
+
+data: {"content_index":0,"delta":"이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":86,"type":"response.output_text.delta","obfuscation":"lwIrz7r0zb9wMco"}
+
+data: {"content_index":0,"delta":" 개","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":87,"type":"response.output_text.delta","obfuscation":"UVmInYZ5nvsxYk"}
+
+data: {"content_index":0,"delta":"설","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":88,"type":"response.output_text.delta","obfuscation":"WmVI6fqrHTlxh8s"}
+
+data: {"content_index":0,"delta":"되어","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":89,"type":"response.output_text.delta","obfuscation":"EZk18vX8uz4viS"}
+
+data: {"content_index":0,"delta":" 있습니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":90,"type":"response.output_text.delta","obfuscation":"gHVgafSfANd"}
+
+data: {"content_index":0,"delta":".","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":91,"type":"response.output_text.delta","obfuscation":"irSstgX6yqf6ISA"}
+
+data: {"content_index":0,"delta":" 사용","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":92,"type":"response.output_text.delta","obfuscation":"2NKAHoStwL1Kf"}
+
+data: {"content_index":0,"delta":"자는","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":93,"type":"response.output_text.delta","obfuscation":"lZZLtDZk28LVNs"}
+
+data: {"content_index":0,"delta":" 새","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":94,"type":"response.output_text.delta","obfuscation":"lmag3AjZ3fc21K"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":95,"type":"response.output_text.delta","obfuscation":"44d5YFlWfzKeiQ"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":96,"type":"response.output_text.delta","obfuscation":"583z7O67nXeA1EU"}
+
+data: {"content_index":0,"delta":"방","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":97,"type":"response.output_text.delta","obfuscation":"8P5pQ3UB7fsdhd3"}
+
+data: {"content_index":0,"delta":"을","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":98,"type":"response.output_text.delta","obfuscation":"q46kUW9A4pxLX5F"}
+
+data: {"content_index":0,"delta":" 생성","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":99,"type":"response.output_text.delta","obfuscation":"iWuQHrSRUYBKw"}
+
+data: {"content_index":0,"delta":"하거나","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":100,"type":"response.output_text.delta","obfuscation":"K3TEEY2Ibp3JS"}
+
+data: {"content_index":0,"delta":" 기존","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":101,"type":"response.output_text.delta","obfuscation":"WhQQ7MwJAyIqd"}
+
+data: {"content_index":0,"delta":" 방","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":102,"type":"response.output_text.delta","obfuscation":"zZaz1QE1jYYPsA"}
+
+data: {"content_index":0,"delta":"에","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":103,"type":"response.output_text.delta","obfuscation":"Vkz0JZJkiHFnZxB"}
+
+data: {"content_index":0,"delta":" 들어","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":104,"type":"response.output_text.delta","obfuscation":"nug0iA2oEJS20"}
+
+data: {"content_index":0,"delta":"갈","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":105,"type":"response.output_text.delta","obfuscation":"MHJF6MyMTh1aVkR"}
+
+data: {"content_index":0,"delta":" 수","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":106,"type":"response.output_text.delta","obfuscation":"sAD31qiFNmbhBt"}
+
+data: {"content_index":0,"delta":" 있습니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":107,"type":"response.output_text.delta","obfuscation":"Ip8uVZQVQLu"}
+
+data: {"content_index":0,"delta":".","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":108,"type":"response.output_text.delta","obfuscation":"NOYleMrHCijHtiC"}
+
+data: {"content_index":0,"delta":" 또한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":109,"type":"response.output_text.delta","obfuscation":"2XWGQQWeWpm9M"}
+
+data: {"content_index":0,"delta":",","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":110,"type":"response.output_text.delta","obfuscation":"eXCe3B9kMmwDKrR"}
+
+data: {"content_index":0,"delta":" 간","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":111,"type":"response.output_text.delta","obfuscation":"91oPsgiyhIBv0j"}
+
+data: {"content_index":0,"delta":"단","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":112,"type":"response.output_text.delta","obfuscation":"I3vUOTu4XpGkziZ"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":113,"type":"response.output_text.delta","obfuscation":"IBNxUUzhOG0HyiQ"}
+
+data: {"content_index":0,"delta":" 이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":114,"type":"response.output_text.delta","obfuscation":"mogdFxiLkX49we"}
+
+data: {"content_index":0,"delta":"모","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":115,"type":"response.output_text.delta","obfuscation":"cz44okjDAyfecAW"}
+
+data: {"content_index":0,"delta":"티","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":116,"type":"response.output_text.delta","obfuscation":"2CLd1T80b3WUAZF"}
+
+data: {"content_index":0,"delta":"콘","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":117,"type":"response.output_text.delta","obfuscation":"oGFO17faxJ2JIRj"}
+
+data: {"content_index":0,"delta":"과","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":118,"type":"response.output_text.delta","obfuscation":"Urr8mbHPvcwNcxK"}
+
+data: {"content_index":0,"delta":" 닉","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":119,"type":"response.output_text.delta","obfuscation":"ZUuyDyEmq3xa2r"}
+
+data: {"content_index":0,"delta":"네","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":120,"type":"response.output_text.delta","obfuscation":"c5rFbQhzgbCCllH"}
+
+data: {"content_index":0,"delta":"임","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":121,"type":"response.output_text.delta","obfuscation":"ZxPY7MZqQJwmmGi"}
+
+data: {"content_index":0,"delta":" 기능","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":122,"type":"response.output_text.delta","obfuscation":"gqImHwr52rzY1"}
+
+data: {"content_index":0,"delta":"을","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":123,"type":"response.output_text.delta","obfuscation":"6618v0tuTWTrI9q"}
+
+data: {"content_index":0,"delta":" 지원","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":124,"type":"response.output_text.delta","obfuscation":"3JOYQ7ETbrZnk"}
+
+data: {"content_index":0,"delta":"하고","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":125,"type":"response.output_text.delta","obfuscation":"ryBy9pPDLXJbKg"}
+
+data: {"content_index":0,"delta":" 있습니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":126,"type":"response.output_text.delta","obfuscation":"YY3MSUM9CMO"}
+
+data: {"content_index":0,"delta":".","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":127,"type":"response.output_text.delta","obfuscation":"TJSh9ean6NH8u7x"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":128,"type":"response.output_text.delta","obfuscation":"LNdV86nIdX9Ys"}
+
+data: {"content_index":0,"delta":"주","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":129,"type":"response.output_text.delta","obfuscation":"mj71gMCqzsye2l2"}
+
+data: {"content_index":0,"delta":"요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":130,"type":"response.output_text.delta","obfuscation":"UEFH2eHUdwh94yG"}
+
+data: {"content_index":0,"delta":" 특징","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":131,"type":"response.output_text.delta","obfuscation":"0f39mU3ujUpcG"}
+
+data: {"content_index":0,"delta":":\n\n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":132,"type":"response.output_text.delta","obfuscation":"FiJti3uq6UOsd"}
+
+data: {"content_index":0,"delta":"-","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":133,"type":"response.output_text.delta","obfuscation":"UmjE3H7scTndZ0s"}
+
+data: {"content_index":0,"delta":" 익","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":134,"type":"response.output_text.delta","obfuscation":"fB1fKVqyJ8TFu9"}
+
+data: {"content_index":0,"delta":"명","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":135,"type":"response.output_text.delta","obfuscation":"grC3NMdgvX7LtGn"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":136,"type":"response.output_text.delta","obfuscation":"ahhtgIdrsgjyte"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":137,"type":"response.output_text.delta","obfuscation":"ZADyg6WNifbu7P4"}
+
+data: {"content_index":0,"delta":" 가능","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":138,"type":"response.output_text.delta","obfuscation":"ZsdVmXkA1YdKB"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":139,"type":"response.output_text.delta","obfuscation":"MxMSqKWaua5N4"}
+
+data: {"content_index":0,"delta":"-","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":140,"type":"response.output_text.delta","obfuscation":"IaUpLg4eR0iu8cs"}
+
+data: {"content_index":0,"delta":" 회원","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":141,"type":"response.output_text.delta","obfuscation":"Woq2CtNlfm1eO"}
+
+data: {"content_index":0,"delta":"가입","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":142,"type":"response.output_text.delta","obfuscation":"mHxUC6VGAvle8w"}
+
+data: {"content_index":0,"delta":" 불","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":143,"type":"response.output_text.delta","obfuscation":"amovKfDpE07HES"}
+
+data: {"content_index":0,"delta":"필","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":144,"type":"response.output_text.delta","obfuscation":"HEDDuGkTgVSWFtv"}
+
+data: {"content_index":0,"delta":"요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":145,"type":"response.output_text.delta","obfuscation":"2TK9ErRfzdoXvD8"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":146,"type":"response.output_text.delta","obfuscation":"MiecdT8HAnDJD"}
+
+data: {"content_index":0,"delta":"-","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":147,"type":"response.output_text.delta","obfuscation":"hpnDAnYPGGLolMu"}
+
+data: {"content_index":0,"delta":" 다양한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":148,"type":"response.output_text.delta","obfuscation":"NLdBirjoVWWj"}
+
+data: {"content_index":0,"delta":" 주","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":149,"type":"response.output_text.delta","obfuscation":"wENLACYVzLBz6U"}
+
+data: {"content_index":0,"delta":"제","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":150,"type":"response.output_text.delta","obfuscation":"zZBiKhY8ok9SxAG"}
+
+data: {"content_index":0,"delta":"와","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":151,"type":"response.output_text.delta","obfuscation":"idJlL5ohnRUvq9L"}
+
+data: {"content_index":0,"delta":" 관심","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":152,"type":"response.output_text.delta","obfuscation":"vUQ37Sd2NApDE"}
+
+data: {"content_index":0,"delta":"사","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":153,"type":"response.output_text.delta","obfuscation":"I8kKFAN1AuSzvB2"}
+
+data: {"content_index":0,"delta":"별","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":154,"type":"response.output_text.delta","obfuscation":"VYLmfuWh00m7PZa"}
+
+data: {"content_index":0,"delta":" 채","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":155,"type":"response.output_text.delta","obfuscation":"32A4EvJL7wMxyr"}
+
+data: {"content_index":0,"delta":"팅","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":156,"type":"response.output_text.delta","obfuscation":"YUbz2XgtZ4BA3tc"}
+
+data: {"content_index":0,"delta":"방","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":157,"type":"response.output_text.delta","obfuscation":"DMPfYW5O7E6s72P"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":158,"type":"response.output_text.delta","obfuscation":"Bx5Bwg6nFMbfm"}
+
+data: {"content_index":0,"delta":"-","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":159,"type":"response.output_text.delta","obfuscation":"J3nNtGRHIJyGRez"}
+
+data: {"content_index":0,"delta":" 실","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":160,"type":"response.output_text.delta","obfuscation":"mOKIK9zA0vf6Zy"}
+
+data: {"content_index":0,"delta":"시간","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":161,"type":"response.output_text.delta","obfuscation":"H8gPLo2ZSyay32"}
+
+data: {"content_index":0,"delta":" 반","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":162,"type":"response.output_text.delta","obfuscation":"OG3VADaSY6Xyrx"}
+
+data: {"content_index":0,"delta":"응","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":163,"type":"response.output_text.delta","obfuscation":"36VFiNreybpW9wE"}
+
+data: {"content_index":0,"delta":"형","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":164,"type":"response.output_text.delta","obfuscation":"w8aUiVOuRP1iygk"}
+
+data: {"content_index":0,"delta":" 대","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":165,"type":"response.output_text.delta","obfuscation":"JRkwpY3ArurbhR"}
+
+data: {"content_index":0,"delta":"화","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":166,"type":"response.output_text.delta","obfuscation":"PJfpbIV5VU8R7xa"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":167,"type":"response.output_text.delta","obfuscation":"aSXc1DM02RMHg"}
+
+data: {"content_index":0,"delta":"-","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":168,"type":"response.output_text.delta","obfuscation":"Cd7OQu5TptNAtVI"}
+
+data: {"content_index":0,"delta":" 이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":169,"type":"response.output_text.delta","obfuscation":"tlN3XwUYDZccfD"}
+
+data: {"content_index":0,"delta":"모","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":170,"type":"response.output_text.delta","obfuscation":"pJ69ttxEjvBk1Nq"}
+
+data: {"content_index":0,"delta":"티","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":171,"type":"response.output_text.delta","obfuscation":"oiVkQ6VqQBYLmP0"}
+
+data: {"content_index":0,"delta":"콘","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":172,"type":"response.output_text.delta","obfuscation":"MzEkYyUZWLdlfq7"}
+
+data: {"content_index":0,"delta":",","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":173,"type":"response.output_text.delta","obfuscation":"xiia0Zx2zcPAjda"}
+
+data: {"content_index":0,"delta":" 닉","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":174,"type":"response.output_text.delta","obfuscation":"B1fNwiN54HuDqV"}
+
+data: {"content_index":0,"delta":"네","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":175,"type":"response.output_text.delta","obfuscation":"aRj1lUgdNfzaDod"}
+
+data: {"content_index":0,"delta":"임","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":176,"type":"response.output_text.delta","obfuscation":"o0xRQPaCulsaADA"}
+
+data: {"content_index":0,"delta":" 등","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":177,"type":"response.output_text.delta","obfuscation":"SMbWZR9Cl5vU4W"}
+
+data: {"content_index":0,"delta":" 간","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":178,"type":"response.output_text.delta","obfuscation":"39HObdJ2M7lYbg"}
+
+data: {"content_index":0,"delta":"단","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":179,"type":"response.output_text.delta","obfuscation":"6JiRD6q4P3zcohH"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":180,"type":"response.output_text.delta","obfuscation":"iQ9ey62Nim8nfOp"}
+
+data: {"content_index":0,"delta":" 부","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":181,"type":"response.output_text.delta","obfuscation":"gcxo1lq5OGdRZy"}
+
+data: {"content_index":0,"delta":"가","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":182,"type":"response.output_text.delta","obfuscation":"cet2kJLRQCNrpXb"}
+
+data: {"content_index":0,"delta":" 기능","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":183,"type":"response.output_text.delta","obfuscation":"RH9HJvHUcts7l"}
+
+data: {"content_index":0,"delta":"\n\n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":184,"type":"response.output_text.delta","obfuscation":"RzUJ0Td8pYhrOw"}
+
+data: {"content_index":0,"delta":"특","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":185,"type":"response.output_text.delta","obfuscation":"fpTnO7Ylj4WLaB1"}
+
+data: {"content_index":0,"delta":"별","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":186,"type":"response.output_text.delta","obfuscation":"5l4QoDiwc5c1lra"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":187,"type":"response.output_text.delta","obfuscation":"SWljwcOiGuET020"}
+
+data: {"content_index":0,"delta":" 점","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":188,"type":"response.output_text.delta","obfuscation":"dUOm4HlulRYW0F"}
+
+data: {"content_index":0,"delta":"은","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":189,"type":"response.output_text.delta","obfuscation":"oZj2NJtU2JwHb0t"}
+
+data: {"content_index":0,"delta":",","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":190,"type":"response.output_text.delta","obfuscation":"2vI4ccUPcpYABA4"}
+
+data: {"content_index":0,"delta":" 번","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":191,"type":"response.output_text.delta","obfuscation":"GZi7ypdOm6aZ8u"}
+
+data: {"content_index":0,"delta":"거","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":192,"type":"response.output_text.delta","obfuscation":"fSFyoBWAJRjU03Y"}
+
+data: {"content_index":0,"delta":"로운","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":193,"type":"response.output_text.delta","obfuscation":"6WheSvtTYdo35d"}
+
+data: {"content_index":0,"delta":" 절","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":194,"type":"response.output_text.delta","obfuscation":"hEzHOT3o71oUrU"}
+
+data: {"content_index":0,"delta":"차","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":195,"type":"response.output_text.delta","obfuscation":"oPABqOFmWCX9k0H"}
+
+data: {"content_index":0,"delta":" 없이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":196,"type":"response.output_text.delta","obfuscation":"nGDO9O8CSo0Zu"}
+
+data: {"content_index":0,"delta":" 누구","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":197,"type":"response.output_text.delta","obfuscation":"ajQtGa4BIkMjg"}
+
+data: {"content_index":0,"delta":"나","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":198,"type":"response.output_text.delta","obfuscation":"LtxlRYgV126nHLA"}
+
+data: {"content_index":0,"delta":" 빠","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":199,"type":"response.output_text.delta","obfuscation":"DZls1QJnp0XO0T"}
+
+data: {"content_index":0,"delta":"르게","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":200,"type":"response.output_text.delta","obfuscation":"lSGBVZWzFsO76L"}
+
+data: {"content_index":0,"delta":" 대","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":201,"type":"response.output_text.delta","obfuscation":"aLugMbGNHxqZTB"}
+
+data: {"content_index":0,"delta":"화를","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":202,"type":"response.output_text.delta","obfuscation":"zw4tv3VnH0qyon"}
+
+data: {"content_index":0,"delta":" 시작","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":203,"type":"response.output_text.delta","obfuscation":"dYwBWeLVkLNqa"}
+
+data: {"content_index":0,"delta":"할","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":204,"type":"response.output_text.delta","obfuscation":"cQTl6Wy6gvQf8Rn"}
+
+data: {"content_index":0,"delta":" 수","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":205,"type":"response.output_text.delta","obfuscation":"Yp7LlX3xJ493Z0"}
+
+data: {"content_index":0,"delta":" 있다는","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":206,"type":"response.output_text.delta","obfuscation":"qJBE6jc4B2cs"}
+
+data: {"content_index":0,"delta":" 점","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":207,"type":"response.output_text.delta","obfuscation":"XlZ2yRp7Z3hACb"}
+
+data: {"content_index":0,"delta":"입니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":208,"type":"response.output_text.delta","obfuscation":"VNKRbx6qX0zIH"}
+
+data: {"content_index":0,"delta":".","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":209,"type":"response.output_text.delta","obfuscation":"rP3Y2MAEeu9rBGJ"}
+
+data: {"content_index":0,"delta":"  \n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":210,"type":"response.output_text.delta","obfuscation":"u7xqmsVKobHf9"}
+
+data: {"content_index":0,"delta":"(","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":211,"type":"response.output_text.delta","obfuscation":"z7IaILZwwdEWHob"}
+
+data: {"content_index":0,"delta":"※","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":212,"type":"response.output_text.delta","obfuscation":"kyE0YTg0B0NA3fW"}
+
+data: {"content_index":0,"delta":" 민","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":213,"type":"response.output_text.delta","obfuscation":"EBlDgBDhFLeDUg"}
+
+data: {"content_index":0,"delta":"감","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":214,"type":"response.output_text.delta","obfuscation":"L52ln13SbmRyklL"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":215,"type":"response.output_text.delta","obfuscation":"4C9olBrAIbsdWEi"}
+
+data: {"content_index":0,"delta":" 주","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":216,"type":"response.output_text.delta","obfuscation":"MzM5EFkZ6hpsU0"}
+
+data: {"content_index":0,"delta":"제","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":217,"type":"response.output_text.delta","obfuscation":"BMR53qmMFA414hj"}
+
+data: {"content_index":0,"delta":"나","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":218,"type":"response.output_text.delta","obfuscation":"IeL4ZoJNrqWmwna"}
+
+data: {"content_index":0,"delta":" 부","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":219,"type":"response.output_text.delta","obfuscation":"az1VbmmK6il7f8"}
+
+data: {"content_index":0,"delta":"적","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":220,"type":"response.output_text.delta","obfuscation":"H4DMEdce29Rnwul"}
+
+data: {"content_index":0,"delta":"절","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":221,"type":"response.output_text.delta","obfuscation":"slbKd2gterXPlCN"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":222,"type":"response.output_text.delta","obfuscation":"8z9K1ZLzuNh41Zb"}
+
+data: {"content_index":0,"delta":" 언","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":223,"type":"response.output_text.delta","obfuscation":"TTPwvn8BXq24Yu"}
+
+data: {"content_index":0,"delta":"행","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":224,"type":"response.output_text.delta","obfuscation":"9g3u91VQDRuf2hp"}
+
+data: {"content_index":0,"delta":"을","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":225,"type":"response.output_text.delta","obfuscation":"d3zVTTn4TvKj4d8"}
+
+data: {"content_index":0,"delta":" 자","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":226,"type":"response.output_text.delta","obfuscation":"eqS0tQAOezxNr5"}
+
+data: {"content_index":0,"delta":"제","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":227,"type":"response.output_text.delta","obfuscation":"PK1vA7MiuAI4Mnp"}
+
+data: {"content_index":0,"delta":"해","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":228,"type":"response.output_text.delta","obfuscation":"9Fle9pa7FsqU78V"}
+
+data: {"content_index":0,"delta":" 달","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":229,"type":"response.output_text.delta","obfuscation":"6C8QCN2vtVEVaO"}
+
+data: {"content_index":0,"delta":"라는","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":230,"type":"response.output_text.delta","obfuscation":"8OvVd7KLfelQNy"}
+
+data: {"content_index":0,"delta":" 안내","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":231,"type":"response.output_text.delta","obfuscation":"rFPwS5YGEvAt4"}
+
+data: {"content_index":0,"delta":" 사항","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":232,"type":"response.output_text.delta","obfuscation":"ak5gR2gldid6v"}
+
+data: {"content_index":0,"delta":"이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":233,"type":"response.output_text.delta","obfuscation":"jaAkV2wNVtFmyUQ"}
+
+data: {"content_index":0,"delta":" 보","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":234,"type":"response.output_text.delta","obfuscation":"krx56LKCkCcU8f"}
+
+data: {"content_index":0,"delta":"통","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":235,"type":"response.output_text.delta","obfuscation":"yl1p74PnL5Uocu2"}
+
+data: {"content_index":0,"delta":" 페이지","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":236,"type":"response.output_text.delta","obfuscation":"Pk8sr0iCRbsQ"}
+
+data: {"content_index":0,"delta":"에","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":237,"type":"response.output_text.delta","obfuscation":"DBF5D9llYpdvpqP"}
+
+data: {"content_index":0,"delta":" 명","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":238,"type":"response.output_text.delta","obfuscation":"cM1sBMyuhEVmhu"}
+
+data: {"content_index":0,"delta":"시","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":239,"type":"response.output_text.delta","obfuscation":"Ir17aj339mn7BIN"}
+
+data: {"content_index":0,"delta":"되어","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":240,"type":"response.output_text.delta","obfuscation":"UKHcikv8OQ7xhE"}
+
+data: {"content_index":0,"delta":" 있습니다","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":241,"type":"response.output_text.delta","obfuscation":"n2WyRvp0STU"}
+
+data: {"content_index":0,"delta":".)\n\n","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":242,"type":"response.output_text.delta","obfuscation":"SiYBUve5sQs5"}
+
+data: {"content_index":0,"delta":"추","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":243,"type":"response.output_text.delta","obfuscation":"pk4HPKnnjaTtnTp"}
+
+data: {"content_index":0,"delta":"가","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":244,"type":"response.output_text.delta","obfuscation":"EsCzhyp10C8tzlG"}
+
+data: {"content_index":0,"delta":"로","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":245,"type":"response.output_text.delta","obfuscation":"UU0YqSqGl5KTKoi"}
+
+data: {"content_index":0,"delta":" 궁","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":246,"type":"response.output_text.delta","obfuscation":"rjnkn8GqYxGuTz"}
+
+data: {"content_index":0,"delta":"금","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":247,"type":"response.output_text.delta","obfuscation":"uRJ0Ls0iXxkFZ2h"}
+
+data: {"content_index":0,"delta":"한","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":248,"type":"response.output_text.delta","obfuscation":"xBPO4ah6Cbhr232"}
+
+data: {"content_index":0,"delta":" 점","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":249,"type":"response.output_text.delta","obfuscation":"WFZXzujS9cdS96"}
+
+data: {"content_index":0,"delta":"이나","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":250,"type":"response.output_text.delta","obfuscation":"CJN9rKE18Pn4Pa"}
+
+data: {"content_index":0,"delta":" 더","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":251,"type":"response.output_text.delta","obfuscation":"BYa6YsojRp4QAa"}
+
+data: {"content_index":0,"delta":" 구","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":252,"type":"response.output_text.delta","obfuscation":"xbL3AqWrDPeyrS"}
+
+data: {"content_index":0,"delta":"체","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":253,"type":"response.output_text.delta","obfuscation":"wIqlUam7O17MXAJ"}
+
+data: {"content_index":0,"delta":"적인","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":254,"type":"response.output_text.delta","obfuscation":"PR2o7MgaHaQ6xE"}
+
+data: {"content_index":0,"delta":" 내용","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":255,"type":"response.output_text.delta","obfuscation":"AI54OAieIufpd"}
+
+data: {"content_index":0,"delta":"이","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":256,"type":"response.output_text.delta","obfuscation":"qBk6OoQcdtWvepv"}
+
+data: {"content_index":0,"delta":" 필요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":257,"type":"response.output_text.delta","obfuscation":"2vfzfttampMJu"}
+
+data: {"content_index":0,"delta":"하","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":258,"type":"response.output_text.delta","obfuscation":"pevKQHM6rqemly2"}
+
+data: {"content_index":0,"delta":"시면","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":259,"type":"response.output_text.delta","obfuscation":"27ZnOjAdnyzzoz"}
+
+data: {"content_index":0,"delta":" 말씀","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":260,"type":"response.output_text.delta","obfuscation":"xvKZB66p7LKJS"}
+
+data: {"content_index":0,"delta":"해","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":261,"type":"response.output_text.delta","obfuscation":"tFVlvzCA8egxNXl"}
+
+data: {"content_index":0,"delta":" 주세요","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":262,"type":"response.output_text.delta","obfuscation":"k4B80VW0Mv5f"}
+
+data: {"content_index":0,"delta":"!","item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":263,"type":"response.output_text.delta","obfuscation":"vvgz23DYB2Dlh1S"}
+
+data: {"content_index":0,"item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","logprobs":[],"output_index":0,"sequence_number":264,"text":"물론입니다! 요청하신 http://chatty.kr 웹사이트의 주요 내용을 요약해 드리겠습니다.\n\n(2024년 6월 기준)  \nChatty.kr은 한국어 채팅방 웹사이트로, 사용자가 실시간으로 대화할 수 있는 공간을 제공합니다. 회원 가입 없이 익명으로 자유롭게 채팅이 가능하며, 다양한 주제의 채팅방이 개설되어 있습니다. 사용자는 새 채팅방을 생성하거나 기존 방에 들어갈 수 있습니다. 또한, 간단한 이모티콘과 닉네임 기능을 지원하고 있습니다.  \n주요 특징:\n\n- 익명 채팅 가능  \n- 회원가입 불필요  \n- 다양한 주제와 관심사별 채팅방  \n- 실시간 반응형 대화  \n- 이모티콘, 닉네임 등 간단한 부가 기능\n\n특별한 점은, 번거로운 절차 없이 누구나 빠르게 대화를 시작할 수 있다는 점입니다.  \n(※ 민감한 주제나 부적절한 언행을 자제해 달라는 안내 사항이 보통 페이지에 명시되어 있습니다.)\n\n추가로 궁금한 점이나 더 구체적인 내용이 필요하시면 말씀해 주세요!","type":"response.output_text.done"}
+
+data: {"content_index":0,"item_id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","output_index":0,"part":{"annotations":[],"text":"물론입니다! 요청하신 http://chatty.kr 웹사이트의 주요 내용을 요약해 드리겠습니다.\n\n(2024년 6월 기준)  \nChatty.kr은 한국어 채팅방 웹사이트로, 사용자가 실시간으로 대화할 수 있는 공간을 제공합니다. 회원 가입 없이 익명으로 자유롭게 채팅이 가능하며, 다양한 주제의 채팅방이 개설되어 있습니다. 사용자는 새 채팅방을 생성하거나 기존 방에 들어갈 수 있습니다. 또한, 간단한 이모티콘과 닉네임 기능을 지원하고 있습니다.  \n주요 특징:\n\n- 익명 채팅 가능  \n- 회원가입 불필요  \n- 다양한 주제와 관심사별 채팅방  \n- 실시간 반응형 대화  \n- 이모티콘, 닉네임 등 간단한 부가 기능\n\n특별한 점은, 번거로운 절차 없이 누구나 빠르게 대화를 시작할 수 있다는 점입니다.  \n(※ 민감한 주제나 부적절한 언행을 자제해 달라는 안내 사항이 보통 페이지에 명시되어 있습니다.)\n\n추가로 궁금한 점이나 더 구체적인 내용이 필요하시면 말씀해 주세요!","type":"output_text","logprobs":[]},"sequence_number":265,"type":"response.content_part.done"}
+
+data: {"item":{"id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","content":[{"annotations":[],"text":"물론입니다! 요청하신 http://chatty.kr 웹사이트의 주요 내용을 요약해 드리겠습니다.\n\n(2024년 6월 기준)  \nChatty.kr은 한국어 채팅방 웹사이트로, 사용자가 실시간으로 대화할 수 있는 공간을 제공합니다. 회원 가입 없이 익명으로 자유롭게 채팅이 가능하며, 다양한 주제의 채팅방이 개설되어 있습니다. 사용자는 새 채팅방을 생성하거나 기존 방에 들어갈 수 있습니다. 또한, 간단한 이모티콘과 닉네임 기능을 지원하고 있습니다.  \n주요 특징:\n\n- 익명 채팅 가능  \n- 회원가입 불필요  \n- 다양한 주제와 관심사별 채팅방  \n- 실시간 반응형 대화  \n- 이모티콘, 닉네임 등 간단한 부가 기능\n\n특별한 점은, 번거로운 절차 없이 누구나 빠르게 대화를 시작할 수 있다는 점입니다.  \n(※ 민감한 주제나 부적절한 언행을 자제해 달라는 안내 사항이 보통 페이지에 명시되어 있습니다.)\n\n추가로 궁금한 점이나 더 구체적인 내용이 필요하시면 말씀해 주세요!","type":"output_text","logprobs":[]}],"role":"assistant","status":"completed","type":"message","phase":null},"output_index":0,"sequence_number":266,"type":"response.output_item.done"}
+
+data: {"response":{"id":"resp_0d876bdabdaef41f0069af723f0d748193a3671cdcf2567c18","created_at":1773105727.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[{"id":"msg_0d876bdabdaef41f0069af723f433c81939bf9061ab565cbdd","content":[{"annotations":[],"text":"물론입니다! 요청하신 http://chatty.kr 웹사이트의 주요 내용을 요약해 드리겠습니다.\n\n(2024년 6월 기준)  \nChatty.kr은 한국어 채팅방 웹사이트로, 사용자가 실시간으로 대화할 수 있는 공간을 제공합니다. 회원 가입 없이 익명으로 자유롭게 채팅이 가능하며, 다양한 주제의 채팅방이 개설되어 있습니다. 사용자는 새 채팅방을 생성하거나 기존 방에 들어갈 수 있습니다. 또한, 간단한 이모티콘과 닉네임 기능을 지원하고 있습니다.  \n주요 특징:\n\n- 익명 채팅 가능  \n- 회원가입 불필요  \n- 다양한 주제와 관심사별 채팅방  \n- 실시간 반응형 대화  \n- 이모티콘, 닉네임 등 간단한 부가 기능\n\n특별한 점은, 번거로운 절차 없이 누구나 빠르게 대화를 시작할 수 있다는 점입니다.  \n(※ 민감한 주제나 부적절한 언행을 자제해 달라는 안내 사항이 보통 페이지에 명시되어 있습니다.)\n\n추가로 궁금한 점이나 더 구체적인 내용이 필요하시면 말씀해 주세요!","type":"output_text","logprobs":[]}],"role":"assistant","status":"completed","type":"message","phase":null}],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":1773105731.0,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"default","status":"completed","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":{"input_tokens":30,"input_tokens_details":{"cached_tokens":0},"output_tokens":263,"output_tokens_details":{"reasoning_tokens":0},"total_tokens":293},"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":267,"type":"response.completed"}
+
+data: [DONE]
+

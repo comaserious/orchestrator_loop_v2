@@ -1,0 +1,42 @@
+data: {"response":{"id":"resp_01ece8cef91da7db0069af71c47d648196870b46b42c68beb0","created_at":1773105605.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":null,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"auto","status":"in_progress","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":null,"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":0,"type":"response.created"}
+
+data: {"response":{"id":"resp_01ece8cef91da7db0069af71c47d648196870b46b42c68beb0","created_at":1773105605.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":null,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"auto","status":"in_progress","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":null,"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":1,"type":"response.in_progress"}
+
+data: {"item":{"id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","content":[],"role":"assistant","status":"in_progress","type":"message","phase":null},"output_index":0,"sequence_number":2,"type":"response.output_item.added"}
+
+data: {"content_index":0,"item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","output_index":0,"part":{"annotations":[],"text":"","type":"output_text","logprobs":[]},"sequence_number":3,"type":"response.content_part.added"}
+
+data: {"content_index":0,"delta":"안","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":4,"type":"response.output_text.delta","obfuscation":"yLcSRixzI9Z0pB7"}
+
+data: {"content_index":0,"delta":"녕하세요","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":5,"type":"response.output_text.delta","obfuscation":"odjc3xUOcuS4"}
+
+data: {"content_index":0,"delta":"!","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":6,"type":"response.output_text.delta","obfuscation":"0YkzRRbQqrijtTU"}
+
+data: {"content_index":0,"delta":" 😊","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":7,"type":"response.output_text.delta","obfuscation":"dzJP0th07pkp1R"}
+
+data: {"content_index":0,"delta":" 무엇","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":8,"type":"response.output_text.delta","obfuscation":"nM9pllHVi1ycK"}
+
+data: {"content_index":0,"delta":"을","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":9,"type":"response.output_text.delta","obfuscation":"MrpkApHPiOMfPqN"}
+
+data: {"content_index":0,"delta":" 도","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":10,"type":"response.output_text.delta","obfuscation":"4DiKuVdnAx7byK"}
+
+data: {"content_index":0,"delta":"와","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":11,"type":"response.output_text.delta","obfuscation":"4aJWIUaYmpp6NMV"}
+
+data: {"content_index":0,"delta":"드","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":12,"type":"response.output_text.delta","obfuscation":"dyNQfyAvDJSjC4g"}
+
+data: {"content_index":0,"delta":"릴","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":13,"type":"response.output_text.delta","obfuscation":"hTOWnZlHACTwqHs"}
+
+data: {"content_index":0,"delta":"까요","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":14,"type":"response.output_text.delta","obfuscation":"PllDNQtX8EoyNH"}
+
+data: {"content_index":0,"delta":"?","item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":15,"type":"response.output_text.delta","obfuscation":"EZQhRuQIVUTXNwT"}
+
+data: {"content_index":0,"item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","logprobs":[],"output_index":0,"sequence_number":16,"text":"안녕하세요! 😊 무엇을 도와드릴까요?","type":"response.output_text.done"}
+
+data: {"content_index":0,"item_id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","output_index":0,"part":{"annotations":[],"text":"안녕하세요! 😊 무엇을 도와드릴까요?","type":"output_text","logprobs":[]},"sequence_number":17,"type":"response.content_part.done"}
+
+data: {"item":{"id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","content":[{"annotations":[],"text":"안녕하세요! 😊 무엇을 도와드릴까요?","type":"output_text","logprobs":[]}],"role":"assistant","status":"completed","type":"message","phase":null},"output_index":0,"sequence_number":18,"type":"response.output_item.done"}
+
+data: {"response":{"id":"resp_01ece8cef91da7db0069af71c47d648196870b46b42c68beb0","created_at":1773105605.0,"error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"gpt-4.1-2025-04-14","object":"response","output":[{"id":"msg_01ece8cef91da7db0069af71c6456c8196b2df2fd109008f1e","content":[{"annotations":[],"text":"안녕하세요! 😊 무엇을 도와드릴까요?","type":"output_text","logprobs":[]}],"role":"assistant","status":"completed","type":"message","phase":null}],"parallel_tool_calls":true,"temperature":1.0,"tool_choice":"auto","tools":[],"top_p":1.0,"background":false,"completed_at":1773105606.0,"conversation":null,"max_output_tokens":null,"max_tool_calls":null,"previous_response_id":null,"prompt":null,"prompt_cache_key":null,"prompt_cache_retention":null,"reasoning":{"effort":null,"generate_summary":null,"summary":null},"safety_identifier":null,"service_tier":"default","status":"completed","text":{"format":{"type":"text"},"verbosity":"medium"},"top_logprobs":0,"truncation":"disabled","usage":{"input_tokens":19,"input_tokens_details":{"cached_tokens":0},"output_tokens":13,"output_tokens_details":{"reasoning_tokens":0},"total_tokens":32},"user":null,"frequency_penalty":0.0,"presence_penalty":0.0,"store":true},"sequence_number":19,"type":"response.completed"}
+
+data: [DONE]
+
