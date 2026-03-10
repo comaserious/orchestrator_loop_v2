@@ -9,3 +9,4 @@ html5lib
 openai
 tavily-python
 glom
+dateparser
