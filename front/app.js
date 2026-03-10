@@ -3,9 +3,31 @@
 const API_URL = 'http://localhost:8200/chat/api/v1';
 
 const TOOL_META = {
-  search_web:     { icon: '🔍', label: '웹 검색' },
-  browse_url:     { icon: '🌐', label: 'URL 분석' },
-  generate_image: { icon: '🎨', label: '이미지 생성' },
+  search_web:              { icon: '🔍', label: '웹 검색' },
+  browse_url:              { icon: '🌐', label: 'URL 분석' },
+  generate_image:          { icon: '🎨', label: '이미지 생성' },
+  // korea-store-mcp (다이소/올리브영/CU/이마트24/메가박스/롯데시네마/CGV)
+  daiso_search_products:   { icon: '🛒', label: '다이소 제품 검색' },
+  daiso_find_stores:       { icon: '📍', label: '다이소 매장 검색' },
+  daiso_check_inventory:   { icon: '📦', label: '다이소 재고 확인' },
+  daiso_get_price_info:    { icon: '💰', label: '다이소 가격 조회' },
+  daiso_get_display_location: { icon: '🗺️', label: '다이소 진열 위치' },
+  cu_find_nearby_stores:   { icon: '🏪', label: 'CU 매장 검색' },
+  cu_check_inventory:      { icon: '📦', label: 'CU 재고 확인' },
+  emart24_find_nearby_stores: { icon: '🏪', label: '이마트24 매장 검색' },
+  emart24_search_products: { icon: '🛒', label: '이마트24 상품 검색' },
+  emart24_check_inventory: { icon: '📦', label: '이마트24 재고 확인' },
+  megabox_find_nearby_theaters: { icon: '🎬', label: '메가박스 지점 검색' },
+  megabox_list_now_showing:     { icon: '🎬', label: '메가박스 상영작 조회' },
+  megabox_get_remaining_seats:  { icon: '💺', label: '메가박스 잔여석 조회' },
+  lottecinema_find_nearby_theaters: { icon: '🎬', label: '롯데시네마 지점 검색' },
+  lottecinema_list_now_showing:     { icon: '🎬', label: '롯데시네마 상영작 조회' },
+  lottecinema_get_remaining_seats:  { icon: '💺', label: '롯데시네마 잔여석 조회' },
+  cgv_find_theaters:       { icon: '🎬', label: 'CGV 극장 검색' },
+  cgv_search_movies:       { icon: '🎬', label: 'CGV 상영작 조회' },
+  cgv_get_timetable:       { icon: '🕐', label: 'CGV 시간표 조회' },
+  oliveyoung_find_nearby_stores: { icon: '💄', label: '올리브영 매장 검색' },
+  oliveyoung_check_inventory:    { icon: '📦', label: '올리브영 재고 확인' },
 };
 const DEFAULT_TOOL = { icon: '⚙️', label: '도구 실행' };
 
@@ -132,10 +154,12 @@ function handleEvent(ev) {
       appendTextDelta(ev.delta ?? '');
       break;
 
-    // ── 툴 시작 배너
+    // ── 툴 시작 배너 (중복 호출 시 패널을 새로 만들지 않고 기존 패널 재사용)
     case 'tools.start':
-      toolPanelEl = createToolPanel(ev.tools);
-      setHeaderStatus(`도구 실행 중 (${ev.tools.length}개)`, 'running');
+      if (!toolPanelEl) {
+        toolPanelEl = createToolPanel(ev.tools);
+      }
+      setHeaderStatus('도구 실행 중...', 'running');
       break;
 
     // ── 개별 툴 실행 중
@@ -223,36 +247,109 @@ function renderMarkdownWithCitations(text) {
 
 // 가볍고 빠른 마크다운 변환 (외부 라이브러리 없이)
 function simpleMarkdown(text) {
-  const escaped = text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+  // ① 이미지 플레이스홀더 추출
+  const images = [];
+  text = text.replace(/!\[([^\]]*)\]\((https?:\/\/[^\)]+)\)/g, (_, alt, url) => {
+    images.push(`<img class="md-img" src="${url}" alt="${alt}" loading="lazy">`);
+    return `\x00IMG${images.length - 1}\x00`;
+  });
 
-  return escaped
-    // 코드 블록 (```...```)
-    .replace(/```[\w]*\n?([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
-    // 인라인 코드
-    .replace(/`([^`]+)`/g, '<code>$1</code>')
-    // ### 헤더
-    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-    // ## 헤더
-    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-    // hr
-    .replace(/^---$/gm, '<hr>')
-    // bold
+  // ② HTML escape
+  text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  // ③ 코드 블록 보호
+  const codes = [];
+  text = text.replace(/```[\w]*\n?([\s\S]*?)```/g, (_, c) => {
+    codes.push(c);
+    return `\x00CODE${codes.length - 1}\x00`;
+  });
+
+  // ④ 인라인 변환 헬퍼
+  const inline = s => s
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    // italic
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // unordered list
-    .replace(/^[*\-] (.+)$/gm, '<li>$1</li>')
-    .replace(/(<li>[\s\S]*?<\/li>)/g, '<ul>$1</ul>')
-    // 단락 (빈 줄 기준)
+    .replace(/(?<!\d)\*(?!\d)([^*\n]+?)(?<!\d)\*(?!\d)/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+
+  // ⑤ 테이블 헬퍼
+  const parseTable = lines => {
+    if (lines.length < 2) return null;
+    const cells = row => row.split('|').slice(1, -1).map(c => c.trim());
+    const sepCells = cells(lines[1]);
+    if (!sepCells.every(c => /^:?-+:?$/.test(c))) return null;
+    const aligns = sepCells.map(c => /^:-+:$/.test(c) ? 'center' : /^-+:$/.test(c) ? 'right' : 'left');
+    const ths = cells(lines[0]).map((h, i) => `<th style="text-align:${aligns[i]}">${inline(h)}</th>`).join('');
+    const trs = lines.slice(2)
+      .map(r => '<tr>' + cells(r).map((c, i) => `<td style="text-align:${aligns[i]}">${inline(c)}</td>`).join('') + '</tr>')
+      .join('');
+    return `<table><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
+  };
+
+  // ⑥ 줄 단위 블록 처리 (표 · 비순서 목록 · 순서 목록)
+  const out = [];
+  const lines = text.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // 표: 현재 줄이 | 로 시작하고 다음 줄이 구분자 행
+    if (line.startsWith('|') && i + 1 < lines.length && /^\|[-: |]+\|/.test(lines[i + 1])) {
+      const tLines = [];
+      while (i < lines.length && lines[i].startsWith('|')) tLines.push(lines[i++]);
+      out.push(parseTable(tLines) ?? tLines.join('\n'));
+      continue;
+    }
+
+    // 비순서 목록 (- 또는 *)
+    if (/^[*\-] /.test(line)) {
+      const items = [];
+      while (i < lines.length && /^[*\-] /.test(lines[i]))
+        items.push(`<li>${inline(lines[i++].replace(/^[*\-] /, ''))}</li>`);
+      out.push(`<ul>${items.join('')}</ul>`);
+      continue;
+    }
+
+    // 순서 목록 (1. 2. …)
+    if (/^\d+\. /.test(line)) {
+      const items = [];
+      while (i < lines.length && /^\d+\. /.test(lines[i]))
+        items.push(`<li>${inline(lines[i++].replace(/^\d+\. /, ''))}</li>`);
+      out.push(`<ol>${items.join('')}</ol>`);
+      continue;
+    }
+
+    out.push(line);
+    i++;
+  }
+  text = out.join('\n');
+
+  // ⑦ 헤더(h1~h6) · 수평선
+  text = text
+    .replace(/^###### (.+)$/gm, (_, c) => `<h6>${inline(c)}</h6>`)
+    .replace(/^##### (.+)$/gm,  (_, c) => `<h5>${inline(c)}</h5>`)
+    .replace(/^#### (.+)$/gm,   (_, c) => `<h4>${inline(c)}</h4>`)
+    .replace(/^### (.+)$/gm,    (_, c) => `<h3>${inline(c)}</h3>`)
+    .replace(/^## (.+)$/gm,     (_, c) => `<h2>${inline(c)}</h2>`)
+    .replace(/^# (.+)$/gm,      (_, c) => `<h1>${inline(c)}</h1>`)
+    .replace(/^---$/gm, '<hr>');
+
+  // ⑧ 나머지 인라인 변환 (일반 텍스트 / 헤더 내부 미처리분)
+  text = inline(text);
+
+  // ⑨ 단락 분리 (빈 줄 기준)
+  return text
     .split(/\n{2,}/)
     .map(block => {
-      if (/^<(h[23]|ul|ol|pre|hr)/.test(block.trim())) return block;
+      const t = block.trim();
+      if (!t) return '';
+      if (/^<(h[1-6]|ul|ol|pre|hr|table)/.test(t)) return t;
+      if (t.startsWith('\x00CODE')) return t;
       return `<p>${block.replace(/\n/g, '<br>')}</p>`;
     })
-    .join('\n');
+    .filter(Boolean)
+    .join('\n')
+    .replace(/\x00CODE(\d+)\x00/g, (_, n) => `<pre><code>${codes[+n]}</code></pre>`)
+    .replace(/\x00IMG(\d+)\x00/g,  (_, n) => images[+n]);
 }
 
 function escapeToHtml(text) {

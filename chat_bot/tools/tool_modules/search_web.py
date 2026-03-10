@@ -30,8 +30,6 @@ def search_web(query: str) -> list[dict]:
             query = query   
         )
 
-        print(f"Search results: {response}")
-        print(f"type : {type(response)}")
         return response['results']
         
     except Exception as e:

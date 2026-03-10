@@ -271,15 +271,33 @@ html, body { height: 100%; font-family: 'Segoe UI', system-ui, sans-serif; backg
 .bot-text { min-height: 1.5em; }
 .bot-text p  { margin-bottom: .8em; }
 .bot-text p:last-child { margin-bottom: 0; }
-.bot-text h2 { font-size: 17px; font-weight: 600; margin: 1em 0 .4em; color: var(--text); }
+.bot-text h1 { font-size: 22px; font-weight: 700; margin: 1.2em 0 .5em; color: var(--text); }
+.bot-text h2 { font-size: 18px; font-weight: 600; margin: 1em 0 .4em; color: var(--text); }
 .bot-text h3 { font-size: 15px; font-weight: 600; margin: .8em 0 .3em; color: var(--text); }
+.bot-text h4 { font-size: 14px; font-weight: 600; margin: .7em 0 .3em; color: var(--text-muted); }
+.bot-text h5 { font-size: 13px; font-weight: 600; margin: .6em 0 .2em; color: var(--text-muted); text-transform: uppercase; letter-spacing: .4px; }
+.bot-text h6 { font-size: 12px; font-weight: 600; margin: .6em 0 .2em; color: var(--text-dim);   text-transform: uppercase; letter-spacing: .4px; }
 .bot-text strong { color: #c5d5ff; }
 .bot-text ul, .bot-text ol { padding-left: 1.4em; margin-bottom: .8em; }
 .bot-text li { margin-bottom: .3em; }
+.bot-text .md-img {
+  display: block;
+  max-width: 160px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin: 6px 0 2px;
+  background: var(--bg3);
+}
 .bot-text code { background: var(--bg3); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: 13px; font-family: 'Consolas', monospace; }
 .bot-text pre  { background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px; overflow-x: auto; margin-bottom: .8em; }
 .bot-text pre code { background: none; border: none; padding: 0; }
 .bot-text hr   { border: none; border-top: 1px solid var(--border); margin: 1em 0; }
+.bot-text table { width: 100%; border-collapse: collapse; margin-bottom: .8em; font-size: 14px; }
+.bot-text th, .bot-text td { padding: 8px 12px; border: 1px solid var(--border); }
+.bot-text th { background: var(--bg3); font-weight: 600; color: var(--text); }
+.bot-text td { color: var(--text-muted); }
+.bot-text tr:hover td { background: rgba(255,255,255,.02); }
 
 /* 커서 깜박임 */
 .cursor {
