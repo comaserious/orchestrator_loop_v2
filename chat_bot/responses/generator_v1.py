@@ -14,8 +14,9 @@ from model import ChatRequest
 
 logger = logging.getLogger(__name__)
 
-MAX_TOOL_ITERATIONS  = 10
+MAX_TOOL_ITERATIONS   = 10
 MAX_TOOL_OUTPUT_CHARS = 20_000
+OLD_OUTPUT_MAX_CHARS  = 300   # Tier 2: 오래된 tool output 축약 길이
 
 # HIL 대기 세션 저장소 (메모리)
 SESSION_STORE: dict[str, dict] = {}
@@ -23,6 +24,18 @@ SESSION_STORE: dict[str, dict] = {}
 
 def _sse(payload: dict) -> str:
     return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
+
+
+def _compress_old_outputs(messages: list) -> None:
+    """Tier 2: 마지막 iteration 이전의 function_call_output을 OLD_OUTPUT_MAX_CHARS로 축약."""
+    indices = [
+        i for i, m in enumerate(messages)
+        if isinstance(m, dict) and m.get("type") == "function_call_output"
+    ]
+    for i in indices[:-1]:  # 마지막(Tier 3)은 건드리지 않음
+        out = messages[i].get("output", "")
+        if len(out) > OLD_OUTPUT_MAX_CHARS:
+            messages[i] = {**messages[i], "output": out[:OLD_OUTPUT_MAX_CHARS] + " ... [truncated]"}
 
 
 async def _execute_tool(name: str, args: dict) -> tuple[str, object]:
@@ -51,6 +64,7 @@ async def _orchestrator_loop(
     client: AsyncOpenAI,
     input_messages: list,
     total_usage: dict,
+    model_name: str = "gpt-4.1",
     start_iteration: int = 0,
     search_results_accumulated: list | None = None,
 ):
@@ -64,7 +78,7 @@ async def _orchestrator_loop(
 
         # ── 1단계: LLM 스트리밍 ─────────────────────────────────────────
         async for event in await client.responses.create(
-            model="gpt-4.1",
+            model=model_name,
             input=input_messages,
             tools=TOOLS + MCP_TOOLS + [{"type" : "image_generation"}],
             stream=True,
@@ -72,6 +86,7 @@ async def _orchestrator_loop(
             yield f"data: {event.model_dump_json()}\n\n"
 
             if event.type == "response.completed":
+                # 토큰 계산
                 usage = getattr(event.response, "usage", None)
                 if usage:
                     total_usage["input_tokens"]  += getattr(usage, "input_tokens",  0)
@@ -115,9 +130,6 @@ async def _orchestrator_loop(
                 b64 = event.partial_image_b64
                 yield _sse({"type" : "image_preview", "b64": b64})
 
-            
-            
-
 
         # ── 2단계: function_call 없으면 최종 응답 ────────────────────────
         if not function_calls_in_turn:
@@ -142,6 +154,8 @@ async def _orchestrator_loop(
 
                 if call.name == "search_web" and isinstance(raw, list):
                     search_results_accumulated.extend(raw)
+                    # 검색 결과는 system prompt에 주입되므로 output은 placeholder로 대체
+                    serialized = "[Search results injected into system prompt]"
 
                 yield _sse({"type": "tool.done", "name": call.name})
                 tool_results.append({
@@ -161,6 +175,7 @@ async def _orchestrator_loop(
                         "name":      call.name,
                         "arguments": call.arguments,
                     },
+                    "model_name":     model_name,
                     "func_args":      func_args,
                     "search_results": list(search_results_accumulated),
                     "total_usage":    dict(total_usage),
@@ -170,6 +185,7 @@ async def _orchestrator_loop(
                     "type":       "human_input.required",
                     "session_id": session_id,
                     "question":   hitl.question,
+                    "model_name": model_name,
                     "options":    hitl.options,
                 })
                 yield "data: [DONE]\n\n"
@@ -185,7 +201,7 @@ async def _orchestrator_loop(
                     "output":  serialized,
                 })
 
-        # ── 4단계: 검색 결과가 있으면 RAG 프롬프트 교체 ─────────────────
+        # ── 4단계: 검색 결과가 있으면 web search 프롬프트 교체 ─────────────────
         if search_results_accumulated:
             input_messages[0] = {
                 "role":    "system",
@@ -198,6 +214,7 @@ async def _orchestrator_loop(
             yield _sse({"type": "citations.ready", "citations": citations})
 
         # ── 5단계: context 확장 후 다음 LLM 호출 ────────────────────────
+        _compress_old_outputs(input_messages)
         for call in function_calls_in_turn:
             input_messages.append({
                 "type":      "function_call",
@@ -222,7 +239,7 @@ async def generator_v1(request: ChatRequest):
         ]
         total_usage = {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}
 
-        async for chunk in _orchestrator_loop(client, input_messages, total_usage):
+        async for chunk in _orchestrator_loop(client, input_messages, total_usage, request.model_name):
             yield chunk
 
     except Exception as e:

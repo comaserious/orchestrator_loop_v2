@@ -17,8 +17,6 @@ async def lifespan(app: FastAPI):
     # router 등록
     app_register.include_routers(app)
 
-    
-
     yield
     print("Shutting down...")
 
