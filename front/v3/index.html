@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orchestrator Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+    <!-- ── 사이드바 ───────────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-logo" title="Orchestrator">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">Orchestrator</span>
+        </div>
+
+        <button class="new-chat-btn" id="new-chat-btn" aria-label="새 대화">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          새 대화
+        </button>
+
+        <div class="sidebar-section-title">최근 대화</div>
+        <div class="chat-list" id="chat-list">
+          <button class="chat-item active" type="button">
+            <span class="chat-dot"></span>
+            <span class="chat-title">기본 대화</span>
+          </button>
+          <button class="chat-item" type="button" disabled title="(샘플 UI)">
+            <span class="chat-dot"></span>
+            <span class="chat-title">도구 기반 검색 예시</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-hint">
+          <div class="hint-title">Tip</div>
+          <div class="hint-body">Enter 전송 · Shift+Enter 줄바꿈</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── 메인 영역 ───────────────────────────────────────── -->
+    <div class="main-area">
+
+      <header class="header">
+        <button class="icon-btn sidebar-toggle" id="sidebar-toggle" aria-label="사이드바 토글">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+        <div class="header-left">
+          <div>
+            <div class="header-title">AI 어시스턴트</div>
+            <div class="header-subtitle">대화 목적에 맞는 모델을 선택해 사용할 수 있습니다.</div>
+          </div>
+
+          <div class="model-switcher" aria-label="모델 선택 영역">
+            <label class="model-switcher-label" for="model-select">모델</label>
+            <div class="model-switcher-control">
+              <select id="model-select" class="model-select" aria-label="모델 선택">
+                <option value="gpt-4.1">gpt-4.1</option>
+                <option value="gpt-5-chat-latest">gpt-5-chat-latest</option>
+              </select>
+              <div class="model-badge" id="model-badge">gpt-4.1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="status-pill" title="연결 상태">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="header-status" id="header-status"></span>
+          </div>
+
+          <button class="icon-btn" id="theme-toggle" aria-label="테마 변경" title="테마 변경">
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="messages-area" id="messages-area">
+        <!-- 웰컴 화면 -->
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">◈</div>
+          <h2>무엇이든 물어보세요</h2>
+          <p>웹 검색, URL 분석 등의 도구를 활용하여 실시간으로 답변드립니다.</p>
+
+          <div class="suggestion-chips">
+            <button class="chip" data-q="오늘 서울 날씨 알려줘">🌤 오늘 서울 날씨</button>
+            <button class="chip" data-q="최근 AI 뉴스 요약해줘">📰 최근 AI 뉴스</button>
+            <button class="chip" data-q="https://chatty.kr 이 사이트 뭐하는 곳이야?">🌐 URL 분석하기</button>
+          </div>
+
+          <div class="welcome-footer">
+            <div class="kbd"><span>Enter</span><span>전송</span></div>
+            <div class="kbd"><span>Shift</span><span>+</span><span>Enter</span><span>줄바꿈</span></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="input-area">
+        <div class="input-wrapper">
+          <textarea
+            id="user-input"
+            placeholder="메시지를 입력하세요... (Shift+Enter로 줄바꿈, Enter로 전송)"
+            rows="1"
+          ></textarea>
+
+          <button class="send-btn" id="send-btn" disabled aria-label="전송">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+          </button>
+        </div>
+      </footer>
+
+    </div><!-- /main-area -->
+  </div><!-- /app -->
+
+  <!-- 인용 툴팁 -->
+  <div class="cite-tooltip" id="cite-tooltip">
+    <div class="cite-tooltip-title" id="cite-tooltip-title"></div>
+    <a class="cite-tooltip-url" id="cite-tooltip-url" target="_blank" rel="noopener noreferrer"></a>
+  </div>
+
+  <!-- 토스트 -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -30,8 +30,8 @@ it does not need one — but if it asserts a fact from the documents, it must be
 in order of appearance:
 
 ## References
-[1] {{document_name}} — {{section_or_page}}
-[2] {{document_name}} — {{section_or_page}}
+[1] [{{title}}]({{url}})
+[2] [{{title}}]({{url}})
 ...
 
 6. If the retrieved chunks do not contain enough information to answer the question, \
