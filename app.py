@@ -8,6 +8,7 @@ async def lifespan(app: FastAPI):
 
     # router 로드
     from chat_bot.router import router as chat_bot_router
+    from test_server.router import router as test_router
     
     from app_registry import app_register
 

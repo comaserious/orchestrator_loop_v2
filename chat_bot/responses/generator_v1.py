@@ -9,7 +9,7 @@ import chat_bot.tools.tool_modules  # noqa: F401 - function 툴 자동 등록
 import chat_bot.tools.mcp_modules   # noqa: F401 - MCP 툴 자동 등록
 from chat_bot.tools.registry import TOOLS, MCP_TOOLS, TOOL_MAP
 from chat_bot.tools.hitl import HumanInputRequired
-from chat_bot.responses.prompts import SYSTEM_PROMPT_BASE, build_web_search_system_prompt
+from chat_bot.responses.prompts import build_web_search_system_prompt, get_system_prompt_base
 from model import ChatRequest
 
 logger = logging.getLogger(__name__)
@@ -217,7 +217,7 @@ async def generator_v1(request: ChatRequest):
     try:
         client = AsyncOpenAI()
         input_messages = [
-            {"role": "system", "content": SYSTEM_PROMPT_BASE},
+            {"role": "system", "content": get_system_prompt_base()},
             {"role": "user",   "content": request.message},
         ]
         total_usage = {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}

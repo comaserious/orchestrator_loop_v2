@@ -1,7 +1,14 @@
-SYSTEM_PROMPT_BASE = "You are a helpful assistant."
+from datetime import datetime
+import pytz
+
+_SYSTEM_PROMPT_BASE = """You are a helpful assistant.
+Current date/time: {today_str}
+When writing date-related queries, always use the exact year from the ISO date returned by the tool."""
 
 _SYSTEM_PROMPT_WITH_SOURCES = """\
 You are a helpful assistant that answers questions based strictly on the provided source documents.
+Current date/time: {today_str}
+When writing date-related queries, always use the exact year from the ISO date returned by the tool.
 
 ## Source Documents
 
@@ -36,12 +43,6 @@ Respond in the same language as the user's question.\
 
 
 def _format_chunks(results: list[dict]) -> str:
-    """
-    search_web 결과 list[dict]를 시스템 프롬프트용 번호 청크 문자열로 변환.
-
-    입력 항목 예시:
-        {"title": "...", "url": "...", "content": "..."}
-    """
     lines: list[str] = []
     for i, item in enumerate(results, start=1):
         title   = item.get("title", "Unknown")
@@ -49,10 +50,16 @@ def _format_chunks(results: list[dict]) -> str:
         content = item.get("content", "")
         lines.append(f"[{i}] Source: {title} | Section: {url}")
         lines.append(f"Content: {content}")
-        lines.append("")          # 청크 사이 빈 줄
+        lines.append("")
     return "\n".join(lines).rstrip()
 
 
 def build_web_search_system_prompt(results: list[dict]) -> str:
-    """검색 결과를 주입한 최종 시스템 프롬프트를 반환."""
-    return _SYSTEM_PROMPT_WITH_SOURCES.format(CHUNKS=_format_chunks(results))
+    now = datetime.now(pytz.timezone("Asia/Seoul"))
+    today_str = now.strftime("%Y-%m-%d (%A) %H:%M KST")
+    return _SYSTEM_PROMPT_WITH_SOURCES.format(today_str=today_str, CHUNKS=_format_chunks(results))
+
+def get_system_prompt_base() -> str:
+    now = datetime.now(pytz.timezone("Asia/Seoul"))
+    today_str = now.strftime("%Y-%m-%d (%A) %H:%M KST")
+    return _SYSTEM_PROMPT_BASE.format(today_str=today_str)

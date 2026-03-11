@@ -5,7 +5,7 @@ from app_registry import app_register
 from chat_bot.responses.generator_v1 import generator_v1, resume_generator
 from model import ChatRequest, ResumeRequest
 
-router = app_register.register_router(APIRouter(prefix="/chat"))
+router = app_register.register_router(APIRouter(prefix="/chat", tags=["chat"]))
 
 _SSE_HEADERS = {
     "Content-Type":  "text/event-stream",
