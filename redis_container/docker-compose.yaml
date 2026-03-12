@@ -1,0 +1,50 @@
+services:
+  redis:
+    image: redis:7.4-alpine
+    container_name: loop-redis
+    ports:
+      - "31200:6379"
+    # 1. appendonly yes: 모든 쓰기 작업을 기록하여 재시작 시 복구 (가장 안전)
+    # 2. save 60 1: 60초 안에 1개 이상의 변경이 있으면 스냅샷 저장
+    # 3. maxmemory-policy noeviction: 메모리가 꽉 차도 데이터를 삭제하지 않고 에러를 반환
+    command: >
+      redis-server
+      --appendonly yes
+      --appendfsync everysec
+      --save 60 1
+      --maxmemory 2gb
+      --maxmemory-policy noeviction
+      --tcp-backlog 511
+      --lazyfree-lazy-eviction yes
+      --auto-aof-rewrite-percentage 100
+      --auto-aof-rewrite-min-size 64mb
+    volumes:
+      - ./redis_data:/data  # 중요: 호스트의 실제 디렉토리에 데이터를 저장
+    networks:
+      - loop-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  redis-commander:
+    container_name: loop-redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:redis:6379:0,local4:redis:6379:4,local1:redis:6379:1,local2:redis:6379:2,local3:redis:6379:3
+    ports:
+      - "8081:8081"
+    networks:
+      - loop-network
+
+networks:
+  loop-network:
+    external: true
+
+
+
+    

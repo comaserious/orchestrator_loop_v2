@@ -17,6 +17,7 @@ services:
     restart: unless-stopped
     networks:
       - backend
+      - loop-network
 
   duckling:
     image: rasa/duckling
@@ -24,11 +25,14 @@ services:
     restart: unless-stopped
     networks:
       - backend
+      - loop-network
     expose: # 컨테이너간 내부 통신 목적이므로 ports 노출 대신 expose 로 사용
       - "8000"
 
 networks:
   backend:
     driver: bridge
+  loop-network:
+    external: true
 
 

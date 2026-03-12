@@ -47,11 +47,12 @@ async def resolve_relative_datetime(
 
     Call this tool:
     - Calendar-based calculations: 'next Monday', 'last day of this month', '3rd Tuesday', 'first Monday of the year'
-    - Compound expressions: 'yesterday at 3pm', '2 weeks from now Friday 10am'
-    - Explicit timezone conversions: 'tomorrow 9am New York time'
+    - Simple relative + time combined: 'yesterday at 3pm', 'tomorrow at 9am', 'today at noon'
+    - Complex compound: '2 weeks from now Friday 10am'
+    - Explicit timezone conversions: '9am New York time'
 
     Do NOT call this tool (use the system prompt date directly):
-    - 'today', 'yesterday', 'tomorrow', 'N days/weeks ago/from now'
+    - Pure relative offsets with no time component: 'today', 'yesterday', 'tomorrow', 'N days/weeks ago/from now'
     - Already absolute dates: '2026-03-10', 'March 10 2026'
     """
 

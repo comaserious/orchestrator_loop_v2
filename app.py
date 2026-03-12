@@ -4,6 +4,10 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    from redis_manager import RedisManager
+
+    await RedisManager.init()
+    
     from dotenv import load_dotenv
 
     # router 로드
@@ -19,6 +23,8 @@ async def lifespan(app: FastAPI):
 
     yield
     print("Shutting down...")
+    await RedisManager.close()
+
 
 app = FastAPI(lifespan=lifespan)
 

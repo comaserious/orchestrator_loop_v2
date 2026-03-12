@@ -5,8 +5,8 @@ from uuid import uuid4
 
 from openai import AsyncOpenAI
 
-import chat_bot.tools.tool_modules  # noqa: F401 - function 툴 자동 등록
-import chat_bot.tools.mcp_modules   # noqa: F401 - MCP 툴 자동 등록
+import chat_bot.tools.tool_modules  # noqa: F401 — auto-register function tools
+import chat_bot.tools.mcp_modules   # noqa: F401 — auto-register MCP tools
 from chat_bot.tools.registry import TOOLS, MCP_TOOLS, TOOL_MAP
 from chat_bot.tools.hitl import HumanInputRequired
 from chat_bot.responses.prompts import build_web_search_system_prompt, get_system_prompt_base
@@ -16,9 +16,9 @@ logger = logging.getLogger(__name__)
 
 MAX_TOOL_ITERATIONS   = 10
 MAX_TOOL_OUTPUT_CHARS = 20_000
-OLD_OUTPUT_MAX_CHARS  = 300   # Tier 2: 오래된 tool output 축약 길이
+OLD_OUTPUT_MAX_CHARS  = 300   # Tier 2: max chars retained for old tool outputs
 
-# HIL 대기 세션 저장소 (메모리)
+# In-memory store for pending HIL sessions
 SESSION_STORE: dict[str, dict] = {}
 
 
@@ -27,7 +27,7 @@ def _sse(payload: dict) -> str:
 
 
 def _compress_old_outputs(messages: list) -> None:
-    """Tier 2: 마지막 iteration 이전의 function_call_output을 OLD_OUTPUT_MAX_CHARS로 축약."""
+    """Tier 2: truncate all but the last function_call_output to OLD_OUTPUT_MAX_CHARS."""
     indices = [
         i for i, m in enumerate(messages)
         if isinstance(m, dict) and m.get("type") == "function_call_output"
@@ -45,7 +45,7 @@ async def _execute_tool(name: str, args: dict) -> tuple[str, object]:
     """
     fn = TOOL_MAP.get(name)
     if fn is None:
-        raise ValueError(f"등록되지 않은 툴: '{name}'")
+        raise ValueError(f"Unregistered tool: '{name}'")
 
     if asyncio.iscoroutinefunction(fn):
         raw = await fn(**args)
@@ -68,7 +68,7 @@ async def _orchestrator_loop(
     start_iteration: int = 0,
     search_results_accumulated: list | None = None,
 ):
-    """핵심 오케스트레이터 루프 — generator_v1 과 resume_generator 가 공유."""
+    """Core orchestrator loop — shared by generator_v1 and resume_generator."""
     if search_results_accumulated is None:
         search_results_accumulated = []
 
@@ -76,7 +76,7 @@ async def _orchestrator_loop(
         function_calls_in_turn = []
         tools_panel_opened = False
 
-        # ── 1단계: LLM 스트리밍 ─────────────────────────────────────────
+        # ── Step 1: LLM streaming ───────────────────────────────────────
         async for event in await client.responses.create(
             model=model_name,
             input=input_messages,
@@ -86,7 +86,7 @@ async def _orchestrator_loop(
             yield f"data: {event.model_dump_json()}\n\n"
 
             if event.type == "response.completed":
-                # 토큰 계산
+                # accumulate token usage
                 usage = getattr(event.response, "usage", None)
                 if usage:
                     total_usage["input_tokens"]  += getattr(usage, "input_tokens",  0)
@@ -131,14 +131,14 @@ async def _orchestrator_loop(
                 yield _sse({"type" : "image_preview", "b64": b64})
 
 
-        # ── 2단계: function_call 없으면 최종 응답 ────────────────────────
+        # ── Step 2: no function calls → final response ──────────────────
         if not function_calls_in_turn:
             yield _sse({"type": "usage.final", "usage": total_usage, "iterations": iteration + 1})
             yield _sse({"type": "stream.done", "iterations": iteration + 1})
             yield "data: [DONE]\n\n"
             return
 
-        # ── 3단계: function_call 실행 ─────────────────────────────────────
+        # ── Step 3: execute function calls ──────────────────────────────
         if not tools_panel_opened:
             yield _sse({"type": "tools.start", "tools": [c.name for c in function_calls_in_turn]})
             tools_panel_opened = True
@@ -154,7 +154,7 @@ async def _orchestrator_loop(
 
                 if call.name == "search_web" and isinstance(raw, list):
                     search_results_accumulated.extend(raw)
-                    # 검색 결과는 system prompt에 주입되므로 output은 placeholder로 대체
+                    # results injected into system prompt — replace output with placeholder
                     serialized = "[Search results injected into system prompt]"
 
                 yield _sse({"type": "tool.done", "name": call.name})
@@ -165,7 +165,7 @@ async def _orchestrator_loop(
                 })
 
             except HumanInputRequired as hitl:
-                # ── HIL: 세션 저장 → SSE 전송 → 스트림 일시 중단 ──────────
+                # ── HIL: save session → send SSE → suspend stream ───────
                 session_id = str(uuid4())
                 SESSION_STORE[session_id] = {
                     "messages":       list(input_messages),
@@ -192,7 +192,7 @@ async def _orchestrator_loop(
                 return
 
             except Exception as e:
-                serialized = f"[오류] {call.name} 실행 실패: {e}"
+                serialized = f"[Error] Tool '{call.name}' failed: {e}"
                 logger.error(serialized)
                 yield _sse({"type": "tool.error", "name": call.name, "error": str(e)})
                 tool_results.append({
@@ -201,7 +201,7 @@ async def _orchestrator_loop(
                     "output":  serialized,
                 })
 
-        # ── 4단계: 검색 결과가 있으면 web search 프롬프트 교체 ─────────────────
+        # ── Step 4: inject search results into system prompt ────────────
         if search_results_accumulated:
             input_messages[0] = {
                 "role":    "system",
@@ -213,7 +213,7 @@ async def _orchestrator_loop(
             ]
             yield _sse({"type": "citations.ready", "citations": citations})
 
-        # ── 5단계: context 확장 후 다음 LLM 호출 ────────────────────────
+        # ── Step 5: compress old outputs, extend context, next LLM call ─
         _compress_old_outputs(input_messages)
         for call in function_calls_in_turn:
             input_messages.append({
@@ -226,7 +226,7 @@ async def _orchestrator_loop(
         input_messages.extend(tool_results)
 
     yield _sse({"type": "usage.final", "usage": total_usage, "iterations": MAX_TOOL_ITERATIONS})
-    yield _sse({"type": "stream.error", "message": "최대 툴 호출 횟수를 초과했습니다."})
+    yield _sse({"type": "stream.error", "message": "Maximum tool iterations exceeded."})
     yield "data: [DONE]\n\n"
 
 
@@ -243,35 +243,36 @@ async def generator_v1(request: ChatRequest):
             yield chunk
 
     except Exception as e:
-        logger.error(f"generator_v1 오류: {e}")
+        logger.error(f"generator_v1 error: {e}")
         raise e
 
 
 async def resume_generator(session_id: str, choice: str):
-    """HIL 사용자 선택 후 오케스트레이터를 재개."""
+    """Resume the orchestrator after a HIL user selection."""
     session = SESSION_STORE.pop(session_id, None)
     if not session:
-        yield _sse({"type": "stream.error", "message": "세션을 찾을 수 없습니다 (만료 또는 잘못된 ID)."})
+        yield _sse({"type": "stream.error", "message": "Session not found (expired or invalid ID)."})
         yield "data: [DONE]\n\n"
         return
 
     messages       = session["messages"]
     call_data      = session["call"]
+    model_name     = session["model_name"]
     func_args      = session["func_args"]
     search_results = session["search_results"]
     total_usage    = session["total_usage"]
     next_iteration = session["iteration"] + 1
 
-    # 사용자 선택을 args 에 반영 후 실제 툴 실행
+    # apply user selection to args and execute tool
     func_args["model_name"] = choice
     try:
         serialized, _ = await _execute_tool(call_data["name"], func_args)
     except Exception as e:
-        yield _sse({"type": "stream.error", "message": f"이미지 생성 실패: {e}"})
+        yield _sse({"type": "stream.error", "message": f"Image generation failed: {e}"})
         yield "data: [DONE]\n\n"
         return
 
-    # context 확장 (step 5 에 해당)
+    # extend context (equivalent to Step 5)
     messages.append({
         "type":      "function_call",
         "id":        call_data["id"],
@@ -291,11 +292,12 @@ async def resume_generator(session_id: str, choice: str):
             client,
             messages,
             total_usage,
+            model_name=model_name,
             start_iteration=next_iteration,
             search_results_accumulated=search_results,
         ):
             yield chunk
 
     except Exception as e:
-        logger.error(f"resume_generator 오류: {e}")
+        logger.error(f"resume_generator error: {e}")
         raise e

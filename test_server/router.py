@@ -9,6 +9,22 @@ router = app_register.register_router(APIRouter(prefix="/test", tags=["test"]))
 async def test():
     return {"message" : "test server rout"}
 
+from redis_manager import RedisManager
+@router.get("/redis")
+async def redis_status():
+    try:
+        redis_client = RedisManager.get_client()
+
+        ping = await redis_client.ping()
+        print(ping)
+
+        test = await redis_client.get("test")
+        print(test)
+        return {"message" : "redis connected"}
+    except Exception as e:
+        return {"message" : str(e)}
+
+
 
 @router.get("/tavily")
 async def tavily():
