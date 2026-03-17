@@ -1,7 +1,7 @@
 'use strict';
 
 const API_URL = 'http://localhost:8200/chat/api/v1';
-const MODEL_OPTIONS = ['gpt-4.1', 'gpt-5-chat-latest'];
+const MODEL_OPTIONS = ['gpt-4.1', 'gpt-5-chat-latest', 'gpt-5.2'];
 const DEFAULT_MODEL = 'gpt-4.1';
 
 const TOOL_META = {

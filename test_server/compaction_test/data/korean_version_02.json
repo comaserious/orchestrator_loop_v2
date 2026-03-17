@@ -1,0 +1,102 @@
+[
+    {"role":"system","content":"당신은 사용자의 질문에 친절하게 답변하는 AI 비서입니다."},
+    
+    {"role":"user","content":"오늘 아침에 너무 졸려서 커피를 두 잔이나 마셨어."},
+    {"role":"assistant","content":"오늘 많이 피곤하신가 봐요. 어제 늦게 주무셨어요?"},
+    {"role":"user","content":"어제 새벽 2시에 잤어. 요즘 프로젝트 마감이라 계속 야근 중이거든."},
+    {"role":"assistant","content":"프로젝트 마감이 가까우면 확실히 바쁘죠. 어떤 프로젝트인가요?"},
+    {"role":"user","content":"회사에서 AI 챗봇 시스템 개발하고 있어."},
+    {"role":"assistant","content":"흥미로운 프로젝트네요. 어떤 기능을 만드는 중인가요?"},
+    {"role":"user","content":"대화 요약 기능이랑 검색 기능을 붙이는 작업을 하고 있어."},
+    {"role":"assistant","content":"요약 기능이면 LLM을 사용하시는 건가요?"},
+    {"role":"user","content":"응 맞아. 긴 대화 기록을 요약하는 기능을 만들고 있어."},
+    
+    {"role":"assistant","content":"요약 성능을 테스트하려면 긴 대화 데이터가 필요하겠네요."},
+    {"role":"user","content":"맞아 그래서 테스트용 대화를 만들고 있는 중이야."},
+    {"role":"assistant","content":"좋은 접근이에요. 다양한 주제가 섞인 대화가 더 좋습니다."},
+    
+    {"role":"user","content":"참, 이번 주 금요일에 팀 회식이 있어."},
+    {"role":"assistant","content":"어디에서 회식하나요?"},
+    {"role":"user","content":"강남에 있는 고기집이야."},
+    {"role":"assistant","content":"고기 좋아하시면 좋겠네요."},
+    {"role":"user","content":"나는 삼겹살 좋아해."},
+    
+    {"role":"assistant","content":"삼겹살 맛있죠. 회식 시간은 언제인가요?"},
+    {"role":"user","content":"금요일 저녁 7시야."},
+    {"role":"assistant","content":"퇴근 후 바로 가는 건가요?"},
+    {"role":"user","content":"응 회사 근처라 바로 갈 거야."},
+    
+    {"role":"assistant","content":"회식 전에 다른 일정은 없으세요?"},
+    {"role":"user","content":"아 맞다 금요일 오후 3시에 고객 미팅도 있어."},
+    {"role":"assistant","content":"그럼 금요일 일정이 꽤 바쁘겠네요."},
+    
+    {"role":"user","content":"맞아. 오전에는 개발 작업하고 오후에는 미팅이야."},
+    {"role":"assistant","content":"어떤 고객 미팅인가요?"},
+    {"role":"user","content":"AI 번역 시스템 도입 관련 미팅이야."},
+    {"role":"assistant","content":"번역 시스템이면 다국어 지원인가요?"},
+    {"role":"user","content":"응 영어, 일본어, 중국어 지원하려고 해."},
+    
+    {"role":"assistant","content":"좋은 계획이네요."},
+    
+    {"role":"user","content":"근데 요즘 운동을 잘 못하고 있어."},
+    {"role":"assistant","content":"바쁘면 운동하기 쉽지 않죠."},
+    {"role":"user","content":"원래 주 3회 헬스장 가는데 요즘은 주 1회 정도밖에 못 가."},
+    
+    {"role":"assistant","content":"어떤 운동을 주로 하세요?"},
+    {"role":"user","content":"벤치프레스랑 스쿼트 위주로 해."},
+    {"role":"assistant","content":"좋은 복합 운동이네요."},
+    
+    {"role":"user","content":"내 목표는 벤치프레스 100kg 드는 거야."},
+    {"role":"assistant","content":"현재는 어느 정도 드세요?"},
+    {"role":"user","content":"지금은 80kg 정도야."},
+    
+    {"role":"assistant","content":"조금씩 올리면 충분히 가능할 것 같아요."},
+    
+    {"role":"user","content":"아 그리고 다음 달에 일본 여행 갈 예정이야."},
+    {"role":"assistant","content":"어디로 여행 가시나요?"},
+    {"role":"user","content":"도쿄랑 하코네 가려고 해."},
+    
+    {"role":"assistant","content":"언제 출발하세요?"},
+    {"role":"user","content":"4월 10일에 출발해서 4월 15일에 돌아올 예정이야."},
+    
+    {"role":"assistant","content":"숙소는 예약하셨나요?"},
+    {"role":"user","content":"도쿄 호텔은 예약했어."},
+    {"role":"assistant","content":"하코네 숙소는 아직인가요?"},
+    {"role":"user","content":"응 아직 알아보는 중이야."},
+    
+    {"role":"assistant","content":"온천 료칸도 인기 많아요."},
+    
+    {"role":"user","content":"맞아 온천 가보고 싶어."},
+    
+    {"role":"assistant","content":"여행 준비 재미있겠네요."},
+    
+    {"role":"user","content":"요즘 영어 공부도 조금 하고 있어."},
+    {"role":"assistant","content":"어떤 방식으로 공부하시나요?"},
+    {"role":"user","content":"유튜브 보면서 쉐도잉 하고 있어."},
+    
+    {"role":"assistant","content":"좋은 방법이에요."},
+    
+    {"role":"user","content":"근데 꾸준히 하는 게 어렵네."},
+    {"role":"assistant","content":"짧게라도 매일 하는 게 도움이 됩니다."},
+    
+    {"role":"user","content":"그래서 하루 10분씩 하려고 노력 중이야."},
+    {"role":"assistant","content":"좋은 습관이네요."},
+    
+    {"role":"user","content":"오늘 저녁에는 집에서 파스타 해먹을 생각이야."},
+    {"role":"assistant","content":"직접 요리하시나요?"},
+    {"role":"user","content":"응 간단한 요리는 자주 해."},
+    
+    {"role":"assistant","content":"파스타에는 어떤 소스 쓰세요?"},
+    {"role":"user","content":"오늘은 토마토 소스로 할 거야."},
+    
+    {"role":"assistant","content":"맛있겠네요."},
+    
+    {"role":"user","content":"내일은 좀 일찍 출근해야 해서 오늘은 일찍 자려고 해."},
+    {"role":"assistant","content":"좋은 생각입니다."},
+    
+    {"role":"user","content":"내일 오전 9시에 개발 회의가 있어."},
+    {"role":"assistant","content":"회의 준비 잘 하세요."},
+    
+    {"role":"user","content":"응 오늘 밤에 자료 조금 정리해야 해."},
+    {"role":"assistant","content":"필요하면 제가 정리 도와드릴 수도 있어요."}
+    ]
