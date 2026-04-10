@@ -1,3 +1,6 @@
 /front
 test.ipynb
 /redis_container
+/compaction_test
+/dynamic_context
+/runpod_connection
