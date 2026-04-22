@@ -1,3 +1,4 @@
 .env
 __pycache__/
 redis_data/
+image_data/
